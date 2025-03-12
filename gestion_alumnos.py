@@ -5,7 +5,7 @@ def cargar_alumnos(ruta_archivo):
         return json.load(archivo)
 
 def buscar_alumno(alumnos, nombre):
-    # Busca el alumno por nombre
+    # Busca el alumno por nombre del archivo json
     for alumno in alumnos:
         if alumno['nombre'].lower() == nombre.lower():
             return alumno
